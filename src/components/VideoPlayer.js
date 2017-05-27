@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import striptags from 'striptags'
-import url from 'url-parse'
+var URL = require('url-parse')
 
 export default class VideoPlayer extends Component {
   constructor(props) {
@@ -10,7 +10,7 @@ export default class VideoPlayer extends Component {
   }
   componentDidMount() {
     axios
-      .get('https://drive.google.com/file/d/0B1ik1ZZAsFh4TlQ5SmR0SHhDMzQ')
+      .get('https://drive.google.com/file/d/0B1ik1ZZAsFh4TlQ5SmR0SHhDMzQ/view')
       .then(function(html) {
         const streamTagSelector = html.data
           .split('script')
