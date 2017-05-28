@@ -3,9 +3,9 @@ import { findDOMNode } from 'react-dom'
 import screenfull from 'screenfull'
 
 // import 'normalize.css/normalize.css'
-// import './defaults.scss'
-// import './App.scss'
-// import './Range.scss'
+import './defaults.scss'
+import './App.scss'
+import './Range.scss'
 
 import ReactPlayer from 'react-player'
 import Duration from './Duration'
