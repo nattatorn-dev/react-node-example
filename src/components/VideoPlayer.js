@@ -152,12 +152,6 @@ export default class VideoPlayer extends Component {
   }
   componentDidMount() {
     //ads
-    fetch(
-      'https://apimov.com/get/0B1ik1ZZAsFh4TlQ5SmR0SHhDMzQ'
-    ).then(response => {
-      console.log('response', response)
-    })
-
     this.setState({ url: this.state.ads, showAds: true })
   }
   render() {
